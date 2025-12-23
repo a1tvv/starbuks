@@ -126,8 +126,6 @@ img{
 
 .btn:hover {
     transform: scale(1.05);
-    background: #121517;
-    border: 1.02px solid #dadada;
     border-radius: 83px;
 }
 
@@ -147,9 +145,6 @@ img{
 
 .link:hover{
     transform: scale(1.05);
-    background: linear-gradient(245deg, #237249 0%, #35c66b 100%);
-    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
-    border-color: transparent;
 }
 
 .stats{
@@ -398,3 +393,119 @@ img{
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
+/* ------------------------------------------------------------------------- */
+
+.event{
+    display: flex;
+}
+
+.event_left{
+    max-width: 390px;
+    margin-right: 390px;
+}
+
+.event_left h1{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109%;
+    margin-bottom: 52px;
+}
+
+.event_left p{
+    margin-bottom: 52px;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+footer {
+    background: #0b0c0d;
+    padding: 60px 0 30px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+/* Логотип слева */
+footer h2 {
+    font-size: 37px;
+    font-weight: 800;
+    margin: 0;
+    min-width: 200px;
+}
+
+/* Контейнер всех меню */
+.footer-content {
+    display: flex;
+    gap: 80px;
+    flex: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-main,
+.footer-menu,
+.footer-product,
+.footer-events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+
+    transition: all 0.5s ease;
+}
+
+.footer-title:hover{
+    transform: scale(1.3);
+}
+
+footer a{
+    transition: all 0.7s ease;
+}
+
+footer a:hover{
+    transform: scale(1.3);
+}
+
+
+/* Телефон справа */
+
+.bac-to-top {
+    position: fixed;
+    bottom: 38px;
+    right: 138px;
+    padding: 30px 30px;
+    background: #121517;
+    border-radius: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background: 
+        linear-gradient(#121517, #121517) padding-box, /* Фон */
+        linear-gradient(210deg, #237249 0%, #35c66b 100%) border-box;
+    
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.bac-to-top:hover{
+    transform: scale(1.1);
+}
